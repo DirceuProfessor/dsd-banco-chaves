@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dsdbancochaves" />
+        <module name="dsd.banco.chaves" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="dsdbancochaves" target="14" />
+      <module name="dsd.banco.chaves" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

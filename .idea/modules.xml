@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/dsd-banco-chaves.iml" filepath="$PROJECT_DIR$/.idea/dsd-banco-chaves.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dsdbancochaves/dsdbancochaves.iml" filepath="$PROJECT_DIR$/dsdbancochaves/dsdbancochaves.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dsd.banco.chaves.iml" filepath="$PROJECT_DIR$/dsd.banco.chaves.iml" />
     </modules>
   </component>
 </project>
