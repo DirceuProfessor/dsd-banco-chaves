@@ -92,7 +92,7 @@ public class SelectsComAlteracao {
                     }
                 }
             };
-//            update.start();
+            update.start();
             //59671 - 4734 | 49913 - 4539
             select.start();   //135326 - 114418 - 110325 - 116532 - 124272 - 86782
 

@@ -1,7 +1,6 @@
 package br.unip.dsd.banco;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -19,8 +18,8 @@ public class SelectsSimples {
             System.out.println("Criando um statement para executar as queries...");
             stmt = conn.createStatement();
             String sql = "SELECT * FROM banco_chaves.teste_simples WHERE ID =1";
-            List<Long> deltas = new ArrayList<Long>();
-            StringBuffer buff = new StringBuffer();
+            List<Long> deltas = new ArrayList<>();
+            StringBuilder buff = new StringBuilder();
 
             for (int indice = 0; indice < 100; indice++) {
                 long before = System.nanoTime();
@@ -36,19 +35,18 @@ public class SelectsSimples {
             buff.append("Tempo medio gasto na execução foi:");
             buff.append(average);
             System.out.println(buff.toString());
-        } catch (SQLException se) {
+        } catch (Exception se) {
             //Handle errors for JDBC
             se.printStackTrace();
-        } catch (Exception e) {
-            //Handle errors for Class.forName
-            e.printStackTrace();
-        } finally {
+        }//Handle errors for Class.forName
+        finally {
             //finally block used to close resources
             try {
                 if (stmt != null) {
                     conn.close();
                 }
             } catch (SQLException se) {
+                se.printStackTrace();
             }// do nothing
             try {
                 if (conn != null) {
